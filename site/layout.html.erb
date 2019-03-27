@@ -10,20 +10,32 @@
     <title>Document</title>
 </head>
 <body>
+    <main>
+        <div class="menu">
+            <div class="links">
+                <a id="button1" href="info.html">
+                    <i class="material-icons">info</i>
+                </a>
+                <a id="button2" href="index.html">
+                    <i class="material-icons">home</i>
+                </a>
+                <a id="button3" href="web.html">
+                    <i class="material-icons">local_activity</i>
+                </a>
+            </div>
+        </div>
+    </main>
     <%= yield %> 
     <header>
-        <div class="button">
-            <div class="menu-button" onclick="showMenu()">
-                <i class="material-icons">menu</i>
-            </div>
-            <div class="menu">
-                
-                <div class="link1">
-                    <i class="material-icons">info</i>
+        <nav>
+            
+            
+            <div class="button">
+                <div class="menu-button" onclick="showMenu()">
+                    <i class="material-icons">menu</i>
                 </div>
-
-                <div class="link2"></div>
-            </div>
+                
+            </nav>
             <p>ÄVENTYR AB</p>
             
         </header>

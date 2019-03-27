@@ -10,3 +10,4 @@ function changeButton(event) {
     document.getElementById("button").innerHTML = "Hem"
     document.getElementById("button").href = "index.html"
 }
+
