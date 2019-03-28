@@ -1,14 +1,18 @@
 body  
+    width: 100%
+    height: 100vh
     margin: 0
     display: grid
     grid-template-rows: 25% 70% 5%
     grid-template-areas: "header" "main" "footer"
 
 header  
+    height: 100%
     background-color: red
     background-image: url(../img/index_mob.jpg)
     margin: 0
-    grid-area: header 
+    background-repeat: no-repeat
+    grid-area: header  
 p 
     text-align: center
     color: white
@@ -35,7 +39,7 @@ main
     background-position-y: 25vh
     background-repeat: no-repeat
     height: 100vh
-    width: 45vw
+    width: 100vw
     background-color: white
     top: 0
     left: -90vw
@@ -131,6 +135,7 @@ i
     margin-top: 60px
     background-image: url(../img/web_mob_bild1.jpg)
     border: 1px solid black
+    cursor: pointer
     
 .aventure1 p 
     color: black
@@ -154,6 +159,7 @@ i
     margin-top: 60px
     background-image: url(../img/web_mob_bild2.jpg)
     border: 1px solid black
+    cursor: pointer
     
     
     // vertical-align: middle   
@@ -171,6 +177,7 @@ i
     height: 70%
     background-color: orange 
     margin-top: 40%
+    background-image: url(../img/info_mob_bild1.jpg)
 
 .infobild2
     width: 80%
@@ -178,6 +185,8 @@ i
     height: 70%
     background-color: orange
     margin-top: 40%
+    background-image: url(../img/info_mob_bild2.jpg)
+
 
 .infobild3
     width: 80%
@@ -185,6 +194,8 @@ i
     height: 70%
     margin-top: 40%
     background-color: orange 
+    background-image: url(../img/info_mob_bild3.jpg)
+
     
 .infobild4
     width: 80%
@@ -192,6 +203,8 @@ i
     height: 70%
     background-color: orange 
     margin-top: 40%
+    background-image: url(../img/info_mob_bild4.jpg)
+
     
     
 .content
@@ -204,10 +217,11 @@ i
 .aventyrtext 
     width: 90vw 
     height: 100%
-    background-color: green
+    background-color: grey          
     margin: auto
     margin-top: 15px
-
+    border: 1px solid black
+    transition: transform .2s    
 .aventyrhead
     border: 1px solid black
     margin: auto 
@@ -215,13 +229,29 @@ i
     width: 80%
     height: 30% 
     background-color: yellow
+    background-image: url(../img/web_mob_bild1.2.jpg)
+    
 
+.aventyrtext:hover
+    transform: scale(1.1)
+.aventyr2text:hover
+    transform: scale(1.1)
+
+
+.aventyrhead:hover
+        box-shadow: 0px 30px 40px rgba(0, 255, 255, 0.2)
+
+.aventyr2head:hover
+        box-shadow: 0px 30px 40px rgba(0, 0, 255, 0.2)
 .aventyr2text 
     width: 90vw 
     height: 100%
-    background-color: green
+    background-color: grey
     margin: auto
     margin-top: 15px
+    border: 1px solid black
+    transition: transform .2s
+ 
 .aventyr2head
     border: 1px solid black
     margin: auto 
@@ -229,6 +259,8 @@ i
     width: 80%
     height: 30% 
     background-color: yellow
+    background-image: url(../img/web_mob_bild2.2.jpg)
+
 
 .aventyr2text p
     color: black
@@ -239,26 +271,26 @@ i
 
 @media only screen  and (max-width : 1000px) 
     .menu 
-        width: 15vw
+        width: 45vw
         position: fixed
-@media only screen  and (min-width : 1000px) 
-    .menu
-        height: 105vh
-        width: 15vw
-        top: 0
-        left: 0
-        bottom: 0
-    .links i
-        width: 10vw
-        margin: 15px
-    main 
-        display: grid
-        grid-template-columns: 15vw auto auto 
-    .menu-button i.material-icons
-        font-size: 0
-    .indexbox1 
-        margin: auto 
-        margin-left: 0
-    .indexbox2
-        margin: auto         
+// @media only screen  and (min-width : 1000px) 
+//     .menu
+//         height: 105vh
+//         width: 15vw
+//         top: 0
+//         left: 0
+//         bottom: 0
+//     .links i
+//         width: 10vw
+//         margin: 15px
+//     main 
+//         display: grid
+//         grid-template-columns: 15vw auto auto 
+//     .menu-button i.material-icons
+//         font-size: 0
+//     .indexbox1 
+//         margin: auto 
+//         margin-left: 0
+//     .indexbox2
+//         margin: auto         
     // ta bort bereden på din sida så får du bort saken där nere
