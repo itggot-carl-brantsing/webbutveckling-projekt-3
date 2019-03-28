@@ -1,13 +1,10 @@
-body 
-    width: 100vw
-    height: 100vh 
+body  
     margin: 0
     display: grid
     grid-template-rows: 25% 70% 5%
     grid-template-areas: "header" "main" "footer"
 
-header 
-    width: 100vw 
+header  
     background-color: red
     background-image: url(../img/index_mob.jpg)
     margin: 0
@@ -25,10 +22,10 @@ nav
     grid-area: nav
 
 .links
-    dispaly: flex
+    display: flex
     flex-wrap: wrap
     i
-        width: 100%
+        width: 40vw
 
 main 
     grid-area: main
@@ -37,7 +34,15 @@ main
     background-image: url(../img/index_mob_menu.jpg)
     background-position-y: 25vh
     background-repeat: no-repeat
-
+    height: 100vh
+    width: 45vw
+    background-color: white
+    top: 0
+    left: -90vw
+    transition: left 0.3s
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75)
+    z-index: 100
+    
 .indexbox1
     width: 80%
     height: 45%
@@ -48,6 +53,7 @@ main
     justify-content: center
     background-image: url(../img/index_mob_bild1.jpg)
     background-repeat: no-repeat
+    grid-column: 2
 
 .innerindexbox1
     width: 90%
@@ -64,6 +70,7 @@ main
     display: flex
     justify-content: center
     background-image: url(../img/index_mob_bild2.jpg)
+    grid-column: 3
 .innerindexbox2
     width: 90%
     height: 80%
@@ -84,16 +91,6 @@ footer
 footer p
     font-size: 1rem 
      
-.menu 
-    height: 100vh
-    width: 45vw
-    background-color: white
-    position: fixed
-    top: 0
-    left: -90vw
-    transition: left 0.3s
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75)
-    z-index: 100
 
 .menu-button
     cursor: pointer
@@ -236,7 +233,32 @@ i
 .aventyr2text p
     color: black
 
-
 .aventyrtext p
     color: black
 
+
+@media only screen  and (max-width : 1000px) 
+    .menu 
+        width: 15vw
+        position: fixed
+@media only screen  and (min-width : 1000px) 
+    .menu
+        height: 105vh
+        width: 15vw
+        top: 0
+        left: 0
+        bottom: 0
+    .links i
+        width: 10vw
+        margin: 15px
+    main 
+        display: grid
+        grid-template-columns: 15vw auto auto 
+    .menu-button i.material-icons
+        font-size: 0
+    .indexbox1 
+        margin: auto 
+        margin-left: 0
+    .indexbox2
+        margin: auto         
+    // ta bort bereden på din sida så får du bort saken där nere
